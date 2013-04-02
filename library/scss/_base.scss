@@ -15,11 +15,17 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 
+html {
+  font-size: 62.5%; /* Sets up the Base 10 stuff for font size mixin */
+}
+
 body {
 	font-family: $serif;
-	font-size: 100%;
+	@include font-size(18, 18 * 1.7);
+	font-weight: 400;
 	line-height: 1.5;
-	color: #565656;
+	color: $text-color;
+	background: $background-color fixed url("../images/escheresque.png");
 }
 
 /********************
@@ -107,7 +113,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $sans-serif;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: 800;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -119,29 +125,38 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	}
 }
 
+// Header sizes
+$h1: 					64;
+$h2: 					48;
+$h3: 					32;
+$h4: 					28;
+$h5: 					24;
+
+// Line height multiplier
+$h-line-height: 		1.15;
+
 h1, .h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
+	@include font-size($h1, $h1 * $h-line-height);
 }
 
 h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
+	@include font-size($h2, $h2 * $h-line-height);
 	margin-bottom: 0.375em;
 }
 
 h3, .h3 {
-	font-size: 1.125em;
+	@include font-size($h3, $h3 * $h-line-height);
+	font-weight: 400;
 }
 
 h4, .h4 {
-	font-size: 1.1em;
-	font-weight: 700;
+	@include font-size($h4, $h4 * $h-line-height);
+	font-weight: 400;
 }
 
 h5, .h5 {
-	font-size: 0.846em;
-	line-height: 2.09em;
+	@include font-size($h5, $h5 * $h-line-height);
+	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
@@ -152,7 +167,10 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#logo { 
+		text-align: center;
+		margin: 1em 0 0.2em;
+	}
 
 /*********************
 NAVIGATION STYLES
@@ -167,16 +185,18 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
-	border-bottom: 0;
+	text-align: center;
+
+	ul {
+		display: inline;
+	}
 
 	li {
 
 		a {
-			display: block;
+			// display: block;
 			text-decoration: none;
 			padding: 10px 10px;
-			background-color: #eee;
 			border-bottom: 1px solid #ccc;
 
 			/*
@@ -245,6 +265,13 @@ POSTS & CONTENT STYLES
 #content {
 	margin-top: 2.2em;
 }
+		#inner-content {
+			background: $white;
+			-webkit-box-shadow: 5px 5px 0 rgba($dark-gray, 0.9), -5px 5px 0 rgba($dark-gray, 0.9);
+    		-moz-box-shadow: 5px 5px 0 rgba($dark-gray, 0.9), -5px 5px 0 rgba($dark-gray, 0.9);
+    		box-shadow: 5px 5px 0 rgba($dark-gray, 0.9), -5px 5px 0 rgba($dark-gray, 0.9);
+    		padding: 0 10px;
+		}
 
 		.hentry {
 
@@ -275,7 +302,7 @@ POSTS & CONTENT STYLES
 
 		/* post meta */
 		.byline {
-			color: #999;
+			color: $dark-gray;
 
 			time {}
 		}
@@ -345,7 +372,7 @@ POSTS & CONTENT STYLES
 			}
 
 			pre {
-				background: #eee;
+				background: $background-color;
 				border: 1px solid #cecece;
 				padding: 10px;
 			}
@@ -354,7 +381,7 @@ POSTS & CONTENT STYLES
 
 		.wp-caption {
 			max-width: 100%;
-			background: #eee;
+			background: $background-color;
 			padding: 5px;
 
 			/* images inside wp-caption */

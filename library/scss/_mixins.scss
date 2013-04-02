@@ -62,8 +62,20 @@ $white:             #fff;
 $bones-pink:        #f01d4f;
 $bones-blue:        #1990db;
 
-$link-color:        $bones-pink;
-$link-hover:        darken($link-color, 9%);
+// The Parallax palette from http://www.colourlovers.com/palette/1200388/STABILO_BOSS
+$gray: 				#E0E0E0;
+$dark-gray: 		#82837E;
+$near-black: 		#2f2f2f;
+$bright-pink: 		#F2065F;
+$pink: 				#BF0252;
+$dark-pink: 		#70003C;
+
+$link-color:        $bright-pink;
+$link-hover:        $pink;
+
+$text-color: 		$near-black;
+$background-color: 	$gray;
+
 
 /*
 Here's a great tutorial on how to
@@ -76,8 +88,8 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$sans-serif:        'Lato', sans-serif;
+$serif:             'Lora', serif;
 
 
 /* 	To embed your own fonts, use this syntax
@@ -99,6 +111,14 @@ $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
     	font-style: normal;
 	}
 */
+
+/* http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/ */ 
+@mixin font-size($sizeValue: 1.6, $line: $sizeValue * 1.5){
+  font-size: ($sizeValue * 1) + px;
+  line-height: ($line * 1) + px;
+  font-size: ($sizeValue / 10) + rem;
+  line-height: ($line / 10) + rem;
+}
 
 /*
 use the best ampersand
@@ -195,6 +215,19 @@ probably best not to use it. I mean, were you going to anyway? */
 	-moz-box-sizing:    $type;
 	-ms-box-sizing:     $type;
 	box-sizing:         $type;
+}
+
+/*********************
+BORDER RADIUS
+*********************/
+
+@mixin border-radius($tl: 5px, $tr: 5px, $br: 5px, $bl: 5px) {
+  -moz-border-radius: $tl $tr $br $bl;
+  -webkit-border-top-left-radius: $tl;
+  -webkit-border-top-right-radius: $tr;
+  -webkit-border-bottom-right-radius: $br;
+  -webkit-border-bottom-left-radius: $bl;
+  border-radius: $tl $tr $br $bl;
 }
 
 

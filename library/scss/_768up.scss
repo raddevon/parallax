@@ -40,8 +40,9 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #eee;
 	border: 0;
+	
+	ul {margin: auto;}
 
 	li {
 		float: left;
@@ -55,8 +56,6 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				background-color: #dedede;
-
 			}
 		}
 
@@ -130,7 +129,60 @@ NAVIGATION STYLES
 		a {}
 	}  /* end current highlighters */
 
+	/* Styling for menu slider animation */
+	&.top-nav ul {
+		margin: 0 auto; 
+		list-style: none; 
+		position: relative;
+
+		li { 
+			display: inline-block; 
+
+			a {
+				position: relative; 
+				z-index: 200;
+				display: block; 
+				float: left; 
+				padding: 6px 10px 4px 10px;
+
+				&:hover { color: $white; }
+			}
+
+			&#sliding-highlight {
+				position: absolute; 
+				top: 0; 
+				left: 0; 
+				width: 100px; 
+				background: $bright-pink; 
+				z-index: 100; 
+				@include border-radius(25px, 25px, 25px, 25px)
+			}
+		}
+
+		.current_page_item a { 
+			color: $white; 
+		}
+
+	}
+
+	.ie6 .top-nav li, .ie7 .top-nav li {
+	display: inline;
+	}
+	
+
 } /* end .nav */
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#inner-content{
+	background: $white;
+	-webkit-box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e;
+	-moz-box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e;
+	box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e;
+	padding: 0 30px;
+}
 
 /*********************
 SIDEBARS & ASIDES

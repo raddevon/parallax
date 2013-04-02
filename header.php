@@ -18,6 +18,9 @@
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+		<!-- Google Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,900,400italic,900italic|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
 		<!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
