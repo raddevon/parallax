@@ -405,7 +405,6 @@ NAVIGATION STYLES
   .nav ul {
     margin: auto; }
   .nav li {
-    float: left;
     position: relative;
     /*
     plan your menus and drop-downs wisely.

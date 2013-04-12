@@ -25,7 +25,7 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: $text-color;
-	background: $background-color fixed url("../images/escheresque.png");
+	background: $background-color;
 }
 
 /********************
@@ -187,9 +187,9 @@ and more scalable.
 .nav {
 	text-align: center;
 
-	ul {
-		display: inline;
-	}
+	// ul {
+	// 	display: inline;
+	// }
 
 	li {
 
@@ -267,9 +267,9 @@ POSTS & CONTENT STYLES
 }
 		#inner-content {
 			background: $white;
-			-webkit-box-shadow: 5px 5px 0 rgba($dark-gray, 0.9), -5px 5px 0 rgba($dark-gray, 0.9);
-    		-moz-box-shadow: 5px 5px 0 rgba($dark-gray, 0.9), -5px 5px 0 rgba($dark-gray, 0.9);
-    		box-shadow: 5px 5px 0 rgba($dark-gray, 0.9), -5px 5px 0 rgba($dark-gray, 0.9);
+			-webkit-box-shadow: 5px 5px 0 rgba($dark-gray, 0.7), -5px 5px 0 rgba($dark-gray, 0.7);
+    		-moz-box-shadow: 5px 5px 0 rgba($dark-gray, 0.7), -5px 5px 0 rgba($dark-gray, 0.7);
+    		box-shadow: 5px 5px 0 rgba($dark-gray, 0.7), -5px 5px 0 rgba($dark-gray, 0.7);
     		padding: 0 10px;
 		}
 

@@ -706,7 +706,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #2f2f2f;
-  background: #e0e0e0 fixed url("../images/escheresque.png"); }
+  background: #e0e0e0; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -845,8 +845,6 @@ and more scalable.
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-  .nav ul {
-    display: inline; }
   .nav li {
     /*
     so you really have to rethink your dropdowns for mobile.
@@ -878,9 +876,9 @@ POSTS & CONTENT STYLES
 
 #inner-content {
   background: white;
-  -webkit-box-shadow: 5px 5px 0 rgba(130, 131, 126, 0.9), -5px 5px 0 rgba(130, 131, 126, 0.9);
-  -moz-box-shadow: 5px 5px 0 rgba(130, 131, 126, 0.9), -5px 5px 0 rgba(130, 131, 126, 0.9);
-  box-shadow: 5px 5px 0 rgba(130, 131, 126, 0.9), -5px 5px 0 rgba(130, 131, 126, 0.9);
+  -webkit-box-shadow: 5px 5px 0 rgba(130, 131, 126, 0.7), -5px 5px 0 rgba(130, 131, 126, 0.7);
+  -moz-box-shadow: 5px 5px 0 rgba(130, 131, 126, 0.7), -5px 5px 0 rgba(130, 131, 126, 0.7);
+  box-shadow: 5px 5px 0 rgba(130, 131, 126, 0.7), -5px 5px 0 rgba(130, 131, 126, 0.7);
   padding: 0 10px; }
 
 /* end .hentry */
@@ -1361,7 +1359,6 @@ you can add resource intensive styles.
     .nav ul {
       margin: auto; }
     .nav li {
-      float: left;
       position: relative;
       /*
       plan your menus and drop-downs wisely.
