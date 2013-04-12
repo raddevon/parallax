@@ -187,17 +187,23 @@ and more scalable.
 .nav {
 	text-align: center;
 
-	// ul {
-	// 	display: inline;
-	// }
+	ul {
+		background: $bright-pink;
+		-webkit-box-shadow: 5px 5px 0 $dark-gray, -5px 5px 0 $dark-gray;
+		-moz-box-shadow: 5px 5px 0 $dark-gray, -5px 5px 0 $dark-gray;
+		box-shadow: 5px 5px 0 $dark-gray, -5px 5px 0 $dark-gray;
+	}
 
 	li {
+		font-family: $sans-serif;
+		@include font-size(20);
+		padding: 5px;
 
 		a {
 			// display: block;
 			text-decoration: none;
 			padding: 10px 10px;
-			border-bottom: 1px solid #ccc;
+			color: $white;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -267,9 +273,9 @@ POSTS & CONTENT STYLES
 }
 		#inner-content {
 			background: $white;
-			-webkit-box-shadow: 5px 5px 0 rgba($dark-gray, 0.7), -5px 5px 0 rgba($dark-gray, 0.7);
-    		-moz-box-shadow: 5px 5px 0 rgba($dark-gray, 0.7), -5px 5px 0 rgba($dark-gray, 0.7);
-    		box-shadow: 5px 5px 0 rgba($dark-gray, 0.7), -5px 5px 0 rgba($dark-gray, 0.7);
+			-webkit-box-shadow: 5px 5px 0 $dark-gray, -5px 5px 0 $dark-gray;
+    		-moz-box-shadow: 5px 5px 0 $dark-gray, -5px 5px 0 $dark-gray;
+    		box-shadow: 5px 5px 0 $dark-gray, -5px 5px 0 $dark-gray;
     		padding: 0 10px;
 		}
 

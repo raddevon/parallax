@@ -845,7 +845,18 @@ and more scalable.
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
+  .nav ul {
+    background: #f2065f;
+    -webkit-box-shadow: 5px 5px 0 #82837e, -5px 5px 0 #82837e;
+    -moz-box-shadow: 5px 5px 0 #82837e, -5px 5px 0 #82837e;
+    box-shadow: 5px 5px 0 #82837e, -5px 5px 0 #82837e; }
   .nav li {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 5px;
     /*
     so you really have to rethink your dropdowns for mobile.
     you don't want to have it expand too much because the
@@ -856,7 +867,7 @@ and more scalable.
     .nav li a {
       text-decoration: none;
       padding: 10px 10px;
-      border-bottom: 1px solid #cccccc;
+      color: white;
       /*
       remember this is for mobile ONLY, so there's no need
       to even declare hover styles here, you can do it in
@@ -876,9 +887,9 @@ POSTS & CONTENT STYLES
 
 #inner-content {
   background: white;
-  -webkit-box-shadow: 5px 5px 0 rgba(130, 131, 126, 0.7), -5px 5px 0 rgba(130, 131, 126, 0.7);
-  -moz-box-shadow: 5px 5px 0 rgba(130, 131, 126, 0.7), -5px 5px 0 rgba(130, 131, 126, 0.7);
-  box-shadow: 5px 5px 0 rgba(130, 131, 126, 0.7), -5px 5px 0 rgba(130, 131, 126, 0.7);
+  -webkit-box-shadow: 5px 5px 0 #82837e, -5px 5px 0 #82837e;
+  -moz-box-shadow: 5px 5px 0 #82837e, -5px 5px 0 #82837e;
+  box-shadow: 5px 5px 0 #82837e, -5px 5px 0 #82837e;
   padding: 0 10px; }
 
 /* end .hentry */
@@ -1357,9 +1368,13 @@ you can add resource intensive styles.
     /* end current highlighters */
     /* Styling for menu slider animation */ }
     .nav ul {
-      margin: auto; }
+      margin: auto;
+      -webkit-box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e;
+      -moz-box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e;
+      box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e; }
     .nav li {
       position: relative;
+      padding: 0 inherit;
       /*
       plan your menus and drop-downs wisely.
       */
@@ -1411,23 +1426,6 @@ you can add resource intensive styles.
           display: block;
           float: left;
           padding: 6px 10px 4px 10px; }
-          .nav.top-nav ul li a:hover {
-            color: white; }
-        .nav.top-nav ul li#sliding-highlight {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100px;
-          background: #f2065f;
-          z-index: 100;
-          -moz-border-radius: 25px 25px 25px 25px;
-          -webkit-border-top-left-radius: 25px;
-          -webkit-border-top-right-radius: 25px;
-          -webkit-border-bottom-right-radius: 25px;
-          -webkit-border-bottom-left-radius: 25px;
-          border-radius: 25px 25px 25px 25px; }
-      .nav.top-nav ul .current_page_item a {
-        color: white; }
     .nav .ie6 .top-nav li, .nav .ie7 .top-nav li {
       display: inline; }
 

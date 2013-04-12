@@ -41,11 +41,17 @@ NAVIGATION STYLES
 
 .nav {
 	border: 0;
-	
-	ul {margin: auto;}
+
+	ul {
+		margin: auto;
+		-webkit-box-shadow: 10px 10px 0 $dark-gray, -10px 10px 0 $dark-gray;
+		-moz-box-shadow: 10px 10px 0 $dark-gray, -10px 10px 0 $dark-gray;
+		box-shadow: 10px 10px 0 $dark-gray, -10px 10px 0 $dark-gray;
+	}
 
 	li {
 		position: relative;
+		padding: 0 inherit;
 
 		a {
 			border-bottom: 0;
@@ -136,32 +142,14 @@ NAVIGATION STYLES
 
 		li { 
 			display: inline-block; 
-
 			a {
 				position: relative; 
 				z-index: 200;
 				display: block; 
 				float: left; 
 				padding: 6px 10px 4px 10px;
-
-				&:hover { color: $white; }
-			}
-
-			&#sliding-highlight {
-				position: absolute; 
-				top: 0; 
-				left: 0; 
-				width: 100px; 
-				background: $bright-pink; 
-				z-index: 100; 
-				@include border-radius(25px, 25px, 25px, 25px)
 			}
 		}
-
-		.current_page_item a { 
-			color: $white; 
-		}
-
 	}
 
 	.ie6 .top-nav li, .ie7 .top-nav li {

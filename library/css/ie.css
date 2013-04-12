@@ -403,9 +403,13 @@ NAVIGATION STYLES
   /* end current highlighters */
   /* Styling for menu slider animation */ }
   .nav ul {
-    margin: auto; }
+    margin: auto;
+    -webkit-box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e;
+    -moz-box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e;
+    box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e; }
   .nav li {
     position: relative;
+    padding: 0 inherit;
     /*
     plan your menus and drop-downs wisely.
     */
@@ -457,23 +461,6 @@ NAVIGATION STYLES
         display: block;
         float: left;
         padding: 6px 10px 4px 10px; }
-        .nav.top-nav ul li a:hover {
-          color: white; }
-      .nav.top-nav ul li#sliding-highlight {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100px;
-        background: #f2065f;
-        z-index: 100;
-        -moz-border-radius: 25px 25px 25px 25px;
-        -webkit-border-top-left-radius: 25px;
-        -webkit-border-top-right-radius: 25px;
-        -webkit-border-bottom-right-radius: 25px;
-        -webkit-border-bottom-left-radius: 25px;
-        border-radius: 25px 25px 25px 25px; }
-    .nav.top-nav ul .current_page_item a {
-      color: white; }
   .nav .ie6 .top-nav li, .nav .ie7 .top-nav li {
     display: inline; }
 
