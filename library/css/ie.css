@@ -406,10 +406,12 @@ NAVIGATION STYLES
     margin: auto;
     -webkit-box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e;
     -moz-box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e;
-    box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e; }
+    box-shadow: 10px 10px 0 #82837e, -10px 10px 0 #82837e;
+    height: 48px; }
   .nav li {
     position: relative;
     padding: 0 inherit;
+    height: 100%;
     /*
     plan your menus and drop-downs wisely.
     */
