@@ -113,7 +113,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $sans-serif;
 	text-rendering: optimizelegibility;
-	font-weight: 800;
+	font-weight: 900;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -137,6 +137,7 @@ $h-line-height: 		1.15;
 
 h1, .h1 {
 	@include font-size($h1, $h1 * $h-line-height);
+	font-style: italic;
 }
 
 h2, .h2 {
@@ -169,6 +170,7 @@ HEADER STYLES
 
 	#logo { 
 		text-align: center;
+		font-style: normal;
 		margin: 1em 0 0.2em;
 	}
 
