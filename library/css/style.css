@@ -1441,6 +1441,26 @@ you can add resource intensive styles.
           display: block;
           float: left;
           padding: 6px 10px 4px 10px; }
+          .nav.top-nav ul li a:after {
+            clear: both;
+            display: block;
+            content: "";
+            position: relative;
+            width: 0;
+            left: 50%;
+            height: 3px;
+            background: white;
+            -webkit-transition: width 0.2s, left 0.2s;
+            -ms-transition: width 0.2s, left 0.2s;
+            -o-transition: width 0.2s, left 0.2s;
+            -transition: width 0.2s, left 0.2s;
+            transition: width 0.2s, left 0.2s;
+            border-radius: 6px; }
+          .nav.top-nav ul li a:hover, .nav.top-nav ul li a:focus {
+            color: white; }
+            .nav.top-nav ul li a:hover:after, .nav.top-nav ul li a:focus:after {
+              width: 100%;
+              left: 0; }
     .nav .ie6 .top-nav li, .nav .ie7 .top-nav li {
       display: inline; }
 

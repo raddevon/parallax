@@ -150,6 +150,25 @@ NAVIGATION STYLES
 				display: block; 
 				float: left; 
 				padding: 6px 10px 4px 10px;
+				&:after {
+					clear: both;
+					display: block;
+					content: "";
+					position: relative;
+					width: 0;
+					left: 50%;
+					height: 3px;
+					background: $white;
+					@include transition(width .2s, left .2s);
+					border-radius: 6px;
+				}
+				&:hover, &:focus {
+					color: $white;
+					&:after {
+						width: 100%;
+						left: 0;
+					}
+				}
 			}
 		}
 	}
