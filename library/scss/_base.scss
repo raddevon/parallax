@@ -138,6 +138,7 @@ $h-line-height: 		1.15;
 h1, .h1 {
 	@include font-size($h1, $h1 * $h-line-height);
 	font-style: italic;
+	margin-bottom: 0;
 }
 
 h2, .h2 {
@@ -311,6 +312,7 @@ POSTS & CONTENT STYLES
 		/* post meta */
 		.byline {
 			color: $dark-gray;
+			margin: 1em 0;
 
 			time {}
 		}
@@ -431,6 +433,15 @@ POSTS & CONTENT STYLES
 		.size-large {}
 		.size-medium {}
 		.size-thumbnail {}
+
+.date { margin: 0; }
+.categories { 
+	margin: 0;
+	img {
+		vertical-align: middle;
+		margin-right: 3px;
+	}
+}
 
 /******************************************************************
 PAGE NAVI STYLES

@@ -19,9 +19,9 @@ Template Name: Custom Page Example
 								<header class="article-header">
 
 									<h1 class="page-title"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link());
-									?></p>
+									<div class="byline vcard"><?php
+										printf(__('<p class="date"><time class="updated" datetime="%1$s" pubdate>%2$s</time></p> <p class="categories"><img src="%3$s/library/images/glyphicons_144_folder_open.png" alt="Categories icon">%4$s</p>', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_template_directory_uri(), get_the_category_list(', '));
+									?></div>
 
 
 								</header> <!-- end article header -->

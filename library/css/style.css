@@ -792,7 +792,8 @@ h1, .h1 {
   line-height: 73.6px;
   font-size: 6.4rem;
   line-height: 7.36rem;
-  font-style: italic; }
+  font-style: italic;
+  margin-bottom: 0; }
 
 h2, .h2 {
   font-size: 48px;
@@ -906,7 +907,8 @@ POSTS & CONTENT STYLES
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #82837e; }
+  color: #82837e;
+  margin: 1em 0; }
 
 /* entry content */
 .entry-content {
@@ -952,6 +954,15 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
+.date {
+  margin: 0; }
+
+.categories {
+  margin: 0; }
+  .categories img {
+    vertical-align: middle;
+    margin-right: 3px; }
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
