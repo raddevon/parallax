@@ -676,7 +676,7 @@ BUTTONS
 @font-face {
   font-family: 'icons';
   src: url("../fonts/icons.eot?73543038");
-  src: url("../fonts/icons.eot?73543038#iefix") format("embedded-opentype"), url("../font/sicons.woff?73543038") format("woff"), url("../fonts/icons.ttf?73543038") format("truetype"), url("../fonts/icons.svg?73543038#icons") format("svg");
+  src: url("../fonts/icons.eot?73543038#iefix") format("embedded-opentype"), url("../fonts/icons.woff?73543038") format("woff"), url("../fonts/icons.ttf?73543038") format("truetype"), url("../fonts/icons.svg?73543038#icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
