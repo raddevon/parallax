@@ -749,6 +749,13 @@ possible. This is called at the top of the main stylsheet
 and will be used across all viewports.
 
 ******************************************************************/
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+  font-family: "Code-Bold";
+  src: url("../fonts/CODE_Bold.eot?") format("eot"), url("../fonts/CODE_Bold.woff") format("woff"), url("../fonts/CODE_Bold.ttf") format("truetype"), url("../fonts/CODE_Bold.svg#Code-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*********************
 GENERAL STYLES
 *********************/
@@ -888,6 +895,7 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 #logo {
+  font-family: "Code-Bold", "Lato", sans-serif, sans-serif;
   text-align: center;
   font-style: normal;
   margin: 1em 0 0.2em; }
